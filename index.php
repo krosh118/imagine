@@ -11,6 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/social-buttons.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
         <style>
             body {
                 padding-top: 50px;
@@ -26,6 +29,49 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+        
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+              <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="http://placehold.it/1200x315" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caption Text</h3>
+                    <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://placehold.it/1200x315" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caption Text</h3>
+                    <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                </div>
+              </div>
+              <div class="item">
+                <img src="http://placehold.it/1200x315" alt="...">
+                <div class="carousel-caption">
+                    <h3>Caption Text</h3>
+                    <a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a>
+                </div>
+              </div>
+            </div>
+ 
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right"></span>
+        </a>
+    </div> <!-- Carousel -->
+        
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
@@ -38,7 +84,12 @@
           <a class="navbar-brand" href="#">IMAGINE</a>
         </div>
         <div class="navbar-collapse collapse">
-          <form class="navbar-form navbar-right" role="form">
+            <div class="form-group navbar-right" style="padding-top: 12px">
+                <button class="btn btn-xlarge btn-facebook"><i class="fa fa-facebook"></i></button>
+                <button class="btn btn-xlarge btn-twitter"><i class="fa fa-twitter"></i></button>
+                <button class="btn btn-xlarge btn-youtube"><i class="fa fa-youtube"></i></button>
+            </div>
+          <!--<form class="navbar-form navbar-right" role="form">
             <div class="form-group">
               <input type="text" placeholder="Email" class="form-control">
             </div>
@@ -46,7 +97,8 @@
               <input type="password" placeholder="Password" class="form-control">
             </div>
             <button type="submit" class="btn btn-success">Sign in</button>
-          </form>
+          </form>-->
+          
         </div><!--/.navbar-collapse -->
       </div>
     </div>
@@ -59,7 +111,7 @@
         <p><a class="btn btn-primary btn-lg" role="button">Learn more &raquo;</a></p>
       </div>
     </div>
-
+    
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
